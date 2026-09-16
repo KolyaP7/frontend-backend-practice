@@ -29,3 +29,7 @@
 
 ФИО: Поташов Николай Валерьевич
 Группа: ЭФБО-02-25
+
+## Опубликованный сайт
+
+https://kolyap7.github.io/frontend-backend-practice/
