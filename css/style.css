@@ -98,18 +98,21 @@ a:focus-visible {
 }
 
 .header{
-    position: fixed;
-    background-color: var(--color-surface-accent);
-    width: 100vw;
-    height: 150px;
+  position: fixed;
+  background-color: var(--color-surface-accent);
+  width: 100vw;
+  height: 150px;
+}
 
+body{
+  overflow-x: hidden;
 }
 
 .site-header{
-    height: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    background-color: var(--color-surface-accent);
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: var(--color-surface-accent);
 }
 
 .top__space{
@@ -118,25 +121,25 @@ a:focus-visible {
 }
 
 .site-logo{
-    font-weight: bold;
-    text-decoration: none;
-    color: #222222;
-    font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222222;
+  font-size: 25px;
 }
 
 .site-nav.list{
-    padding: 0;
-    margin: 16px 0 0;
-    list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  list-style: none;
 }
 
 .site-nav.list a{
-    color: #0057b8;
-    text-decoration: none;
+  color: #0057b8;
+  text-decoration: none;
 }
 
 .site-nav.list a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .hero {
@@ -251,6 +254,10 @@ a:focus-visible {
 .space{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+}
+
+.footer{
+  padding: var(--space-lg);
 }
 
 /* ===============================
