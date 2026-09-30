@@ -53,7 +53,7 @@ orderForm.addEventListener('submit', (event) => {
   // Проверяем встроенные HTML-ограничения формы.
   if (!orderForm.checkValidity()) {
     formElements.forEach((element) => {
-      if (element.willValie &dat& !element.checkValidity()) {
+      if (element.willValidate && !element.checkValidity()) {
         element.setAttribute('aria-invalid', 'true');
       }
     });
