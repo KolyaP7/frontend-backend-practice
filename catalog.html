@@ -25,7 +25,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог товаров</title>
+    <meta name="description" content="Каталог товаров учебного интернет-магазина.">
+    <title>Каталог товаров — Учебный интернет-магазин</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
 </head>
@@ -34,18 +35,24 @@
         <div class="site-header">
             <a class="site-logo" href="index.html">ShopProject</a>
             <nav class="site-nav" aria-label="Основная навигация">
-                <ul class="site-nav list">
+                <ul class="site-nav__list">
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="#popular">Каталог</a></li>
-                    <li><a href="#advantages">Преимущества</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="index.html#advantages">Преимущества</a></li>
+                    <li><a href="index.html#popular">Популярные товары</a></li>
+                    <li><a href="index.html#contacts">Обратная связь</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
+
         <div class="top__space"></div>
-        
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <a class="breadcrumb" href="index.html">Главная</a>
+            <span class="breadcrumb">Каталог</span>
+        </nav>
         <section class="section" id="popular">
             <h2>Каталог товаров</h2>
             <div class="popular-cards__section">
