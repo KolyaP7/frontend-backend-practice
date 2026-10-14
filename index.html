@@ -25,7 +25,7 @@
     </header>
     <main>
         <div class="top-space"></div>
-        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <nav class="breadcrumbs" id="breadcrumbs" aria-label="Хлебные крошки">
             <p class="breadcrumbs__current" style="color: var(--color-muted); margin: 0; padding: 0;">Главная</p>
         </nav>
         <section class="hero">
@@ -49,7 +49,7 @@
         <section class="popular-products section" id="popular">
             <h2 class="popular-products__title">Популярные товары</h2>
             <div class="popular-products__container products-grid">
-                <article class="product-card">
+                <article class="product-card product-card--medium">
                     <h3 class="product-card__title">Наушники Apple</h3>
                     <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
                     <div class="space"></div>
@@ -57,7 +57,7 @@
                     <p class="product-card__price">Цена: 40000 руб.</p>
                     <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
                 </article>
-                <article class="product-card">
+                <article class="product-card product-card--medium product-card--sale">
                     <h3 class="product-card__title">Кроссовки Nike</h3>  
                     <img class="product-card__image" src="./images/close-up-futuristic-sneakers.jpg">
                     <div class="space"></div>
@@ -65,7 +65,7 @@
                     <p class="product-card__price">Цена: 10000 руб.</p>
                     <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
                 </article>
-                <article class="product-card">
+                <article class="product-card product-card--medium">
                     <h3 class="product-card__title">Рюкзак</h3>
                     <img class="product-card__image" src="./images/colorful-pastel-backpack-pink-background.jpg">
                     <div class="space"></div>
@@ -166,5 +166,14 @@
     <p class="success-message" id="success-message" hidden>
         Ваша заявка успешно отправлена!
     </p>
+    <div class="top-scroll">
+        <button class="top-scroll__button" id="top-scroll__button" aria-label="Наверх">
+            <a class="top-scroll__link" href="#breadcrumbs">
+                <svg class="top-scroll__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 2L6 8h4v8h4V8h4l-6-6z"/>
+                </svg>
+            </a>
+        </button>
+    </div>
 </body>
 </html>

@@ -72,3 +72,14 @@ orderForm.addEventListener('submit', (event) => {
   // Закрываем модальное окно.
   orderDialog.close();
 });
+
+
+window.addEventListener('scroll', function() {
+  const scrollTop = window.pageYOffset;
+  console.log('Прокрутка по Y:', scrollTop);
+  if (scrollTop > 500) {
+    document.querySelector('.top-scroll').classList.add('show');
+  } else {
+    document.querySelector('.top-scroll').classList.remove('show');
+  }
+});

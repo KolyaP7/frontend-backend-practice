@@ -48,7 +48,7 @@
     </header>
     <main>
         <div class="top-space"></div>
-        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <nav class="breadcrumbs" id="breadcrumbs" aria-label="Хлебные крошки">
             <a class="breadcrumbs__link" href="index.html">Главная</a>
             <span class="breadcrumbs__current">Каталог</span>
         </nav>
@@ -92,7 +92,7 @@
             <section class="catalog-products" id="popular">
                 <h2 class="catalog-products__title">Каталог товаров</h2>
                 <div class="catalog-products__container products-grid">
-                    <article class="product-card">
+                    <article class="product-card product-card--small">
                         <h3 class="product-card__title">Наушники Apple</h3>
                         <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
                         <div class="space"></div>
@@ -100,7 +100,7 @@
                         <p class="product-card__price">Цена: 40000 руб.</p>
                         <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
                     </article>
-                    <article class="product-card">
+                    <article class="product-card product-card--small">
                         <h3 class="product-card__title">Кроссовки Nike</h3>  
                         <img class="product-card__image" src="./images/close-up-futuristic-sneakers.jpg">
                         <div class="space"></div>
@@ -108,7 +108,199 @@
                         <p class="product-card__price">Цена: 10000 руб.</p>
                         <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
                     </article>
-                    <article class="product-card">
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Рюкзак</h3>
+                        <img class="product-card__image" src="./images/colorful-pastel-backpack-pink-background.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Рюкзак 35л объем.</p>
+                        <p class="product-card__price">Цена: 15000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Наушники Apple</h3>
+                        <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Наушники airpods apple.</p>
+                        <p class="product-card__price">Цена: 40000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Кроссовки Nike</h3>  
+                        <img class="product-card__image" src="./images/close-up-futuristic-sneakers.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Кроссовки Nike 42 размера.</p>
+                        <p class="product-card__price">Цена: 10000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Рюкзак</h3>
+                        <img class="product-card__image" src="./images/colorful-pastel-backpack-pink-background.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Рюкзак 35л объем.</p>
+                        <p class="product-card__price">Цена: 15000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Наушники Apple</h3>
+                        <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Наушники airpods apple.</p>
+                        <p class="product-card__price">Цена: 40000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Кроссовки Nike</h3>  
+                        <img class="product-card__image" src="./images/close-up-futuristic-sneakers.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Кроссовки Nike 42 размера.</p>
+                        <p class="product-card__price">Цена: 10000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Рюкзак</h3>
+                        <img class="product-card__image" src="./images/colorful-pastel-backpack-pink-background.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Рюкзак 35л объем.</p>
+                        <p class="product-card__price">Цена: 15000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Наушники Apple</h3>
+                        <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Наушники airpods apple.</p>
+                        <p class="product-card__price">Цена: 40000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Кроссовки Nike</h3>  
+                        <img class="product-card__image" src="./images/close-up-futuristic-sneakers.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Кроссовки Nike 42 размера.</p>
+                        <p class="product-card__price">Цена: 10000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Рюкзак</h3>
+                        <img class="product-card__image" src="./images/colorful-pastel-backpack-pink-background.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Рюкзак 35л объем.</p>
+                        <p class="product-card__price">Цена: 15000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Наушники Apple</h3>
+                        <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Наушники airpods apple.</p>
+                        <p class="product-card__price">Цена: 40000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Кроссовки Nike</h3>  
+                        <img class="product-card__image" src="./images/close-up-futuristic-sneakers.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Кроссовки Nike 42 размера.</p>
+                        <p class="product-card__price">Цена: 10000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Рюкзак</h3>
+                        <img class="product-card__image" src="./images/colorful-pastel-backpack-pink-background.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Рюкзак 35л объем.</p>
+                        <p class="product-card__price">Цена: 15000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Наушники Apple</h3>
+                        <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Наушники airpods apple.</p>
+                        <p class="product-card__price">Цена: 40000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Кроссовки Nike</h3>  
+                        <img class="product-card__image" src="./images/close-up-futuristic-sneakers.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Кроссовки Nike 42 размера.</p>
+                        <p class="product-card__price">Цена: 10000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Рюкзак</h3>
+                        <img class="product-card__image" src="./images/colorful-pastel-backpack-pink-background.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Рюкзак 35л объем.</p>
+                        <p class="product-card__price">Цена: 15000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Наушники Apple</h3>
+                        <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Наушники airpods apple.</p>
+                        <p class="product-card__price">Цена: 40000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Кроссовки Nike</h3>  
+                        <img class="product-card__image" src="./images/close-up-futuristic-sneakers.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Кроссовки Nike 42 размера.</p>
+                        <p class="product-card__price">Цена: 10000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Рюкзак</h3>
+                        <img class="product-card__image" src="./images/colorful-pastel-backpack-pink-background.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Рюкзак 35л объем.</p>
+                        <p class="product-card__price">Цена: 15000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Наушники Apple</h3>
+                        <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Наушники airpods apple.</p>
+                        <p class="product-card__price">Цена: 40000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Кроссовки Nike</h3>  
+                        <img class="product-card__image" src="./images/close-up-futuristic-sneakers.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Кроссовки Nike 42 размера.</p>
+                        <p class="product-card__price">Цена: 10000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Рюкзак</h3>
+                        <img class="product-card__image" src="./images/colorful-pastel-backpack-pink-background.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Рюкзак 35л объем.</p>
+                        <p class="product-card__price">Цена: 15000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Наушники Apple</h3>
+                        <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Наушники airpods apple.</p>
+                        <p class="product-card__price">Цена: 40000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
+                        <h3 class="product-card__title">Кроссовки Nike</h3>  
+                        <img class="product-card__image" src="./images/close-up-futuristic-sneakers.jpg">
+                        <div class="space"></div>
+                        <p class="product-class__description">Кроссовки Nike 42 размера.</p>
+                        <p class="product-card__price">Цена: 10000 руб.</p>
+                        <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
+                    </article>
+                    <article class="product-card product-card--small">
                         <h3 class="product-card__title">Рюкзак</h3>
                         <img class="product-card__image" src="./images/colorful-pastel-backpack-pink-background.jpg">
                         <div class="space"></div>
@@ -203,13 +395,22 @@
                 </label>
             </div>
             <div class="order-form__actions">
-                <button type="button" id="close-order-dialog">Закрыть</button>
-                <button type="submit">Отправить заявку</button>
+                <button class="order-form__button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+                <button class="order-form__button button--primary" type="submit">Отправить заявку</button>
             </div>
         </form>
     </dialog>
     <p class="success-message" id="success-message" hidden>
         Ваша заявка успешно отправлена!
     </p>
+    <div class="top-scroll">
+        <button class="top-scroll__button" id="top-scroll__button" aria-label="Наверх">
+            <a class="top-scroll__link" href="#breadcrumbs">
+                <svg class="top-scroll__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 2L6 8h4v8h4V8h4l-6-6z"/>
+                </svg>
+            </a>
+        </button>
+    </div>
 </body>
 </html>
