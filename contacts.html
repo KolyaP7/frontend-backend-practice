@@ -3,54 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог товаров</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="site-header">
-            <a class="site-logo" href="index.html">ShopProject</a>
+            <a class="site-header__logo" href="index.html">ShopProject</a>
             <nav class="site-nav" aria-label="Основная навигация">
                 <ul class="site-nav__list">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="index.html#advantages">Преимущества</a></li>
-                    <li><a href="index.html#popular">Популярные товары</a></li>
-                    <li><a href="index.html#contacts">Обратная связь</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="main">
-        <div class="top__space"></div>
+    <main>
+        <div class="top-space"></div>
         <nav class="breadcrumbs" aria-label="Хлебные крошки">
-            <a href="index.html">Главная</a>
-            <span>Контакты</span>
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+            <span class="breadcrumbs__current">Контакты</span>
         </nav>
         <section class="hero">
-            <h1>
+            <h1 class="hero__title">
                 Учебный интернет-магазин
             </h1>
-            <p>
+            <p class="hero__text">
                 Это стандартная страница учебного frontend-проекта. В дальнейшем на ее основе будет разработан многостраничный сайт интернет-магазина или каталог услуг.
             </p>
-            <a class="button" href="#popular">Перейти к товарам</a>
+            <a class="hero__button button" href="#popular">Перейти к товарам</a>
         </section>
-        <section class="section" id="advantages">
-            <h2>Преимущества проекта</h2>
-            <ul class="advantages-list">
-                <li>Понятная HTML-структура;</li>
-                <li>Семантические блоки страницы;</li>
-                <li>Подключение внешнего CSS-файла;</li>
-                <li>Подготовка к разработке многостраничного сайта.</li>
-
+        <section class="project-advantages section" id="advantages">
+            <h2 class="project-advantages__title">Преимущества проекта</h2>
+            <ul class="project-advantages__list">
+                <li class="project-advantages__text">Понятная HTML-структура;</li>
+                <li class="project-advantages__text">Семантические блоки страницы;</li>
+                <li class="project-advantages__text">Подключение внешнего CSS-файла;</li>
+                <li class="project-advantages__text">Подготовка к разработке многостраничного сайта.</li>
             </ul>
         </section>
-        <section class="section" id="popular">
-            <h2>Популярные товары</h2>
-            <div class="popular-cards__section products-grid">
+        <section class="popular-products section" id="popular">
+            <h2 class="popular-products__title">Популярные товары</h2>
+            <div class="popular-products__container products-grid">
                 <article class="product-card">
                     <h3 class="product-card__title">Наушники Apple</h3>
                     <img class="product-card__image" src="./images/close-up-headphones-detail.jpg">
@@ -78,23 +77,24 @@
             </div>
         </section>
         <aside class="aside-info">
-            <h2>Информация для студентов</h2>
-            <p>
+            <h2 class="aside-info__title">Информация для студентов</h2>
+            <p class="aside-info__text">
                 На следующих практических занятиях этот проект будет расширяться; Появяться формы, модальное окно, дополнительные страницы, Flex/Grid, БЭМ-структура и адаптивная верстка сайта.
             </p>
         </aside>
     </main>
-    <footer id="contacts" class="footer">
+    <footer id="contacts" class="site-footer">
         <p>&copy; 2026 Учебный проект. Все права защищены.</p>
         <p>Дисциплина: Фронтенд и бэкенд разработка</p>
     </footer>
     <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
-        <h2 id="order-dialog-title">Оформление заявки</h2>
+        <h2 id="order-dialog__title">Оформление заявки</h2>
         <form class="order-form" id="order-form" action="#" method="post" novalidate>
             <input id="selected-product" name="selected-product" type="hidden">
-            <div class="form-field">
-                <label for="order-name">Имя</label>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-name">Имя</label>
                 <input id="order-name"
+                class="order-form__input"
                 name="name"
                 type="text"
                 placeholder="Введите ваше имя"
@@ -102,18 +102,20 @@
                 autocomplete="given-name"
                 required>
             </div>
-            <div class="form-field">
-                <label for="order-email">Email</label>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-email">Email</label>
                 <input id="order-email"
+                class="order-form__input"
                 name="email"
                 type="email"
                 placeholder="example@mail.ru"
                 autocomplete="email"
                 required>
             </div>
-            <div class="form-field">
-                <label for="order-phone">Телефон</label>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-phone">Телефон</label>
                 <input id="order-phone"
+                class="order-form__input"
                 name="phone"
                 type="tel"
                 placeholder="+7 (999) 999-99-99"
@@ -122,15 +124,16 @@
                 required>
                 <small>Формат: +7 (999) 999-99-99</small>
             </div>
-            <div class="form-field">
-                <label for="order-date">Дата связи</label>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-date">Дата связи</label>
                 <input id="order-date"
+                class="order-form__input"
                 name="date"
                 type="date"
                 required>
             </div>
-            <div class="form-field">
-                <label for="order-topic">Тема заявки</label>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-topic">Тема заявки</label>
                 <select id="order-topic" name="topic" required>
                     <option value="">Выберите тему</option>
                     <option value="product">Заказ товара</option>
@@ -138,23 +141,24 @@
                     <option value="delivery">Доставка</option>
                 </select>
             </div>
-            <div class="form-field">
-                <label for="order-comment">Комментарий</label>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-comment">Комментарий</label>
                 <textarea
                 id="order-comment" 
                 name="comment"
                 rows="4"
                 placeholder="Укажите дополнительную информацию"></textarea>
             </div>
-            <div class="form-field form-field--checkbox">
-                <label>
+            <div class="order-form__field">
+                <label class="order-form__label">
                     <input id="order-agreement" 
+                    class="order-form__input"
                     type="checkbox"
                     name="agreement" required>
                     Я согласен на обработку персональных данных
                 </label>
             </div>
-            <div class="form-actions">
+            <div class="order-form__actions">
                 <button type="button" id="close-order-dialog">Закрыть</button>
                 <button type="submit">Отправить заявку</button>
             </div>

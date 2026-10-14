@@ -101,7 +101,7 @@ a:focus-visible {
   margin-top: 20px;
 }
 
-.header{
+header{
   position: fixed;
   background-color: var(--color-surface-accent);
   width: 100vw;
@@ -135,7 +135,7 @@ body{
   list-style: none;
 }
 
-.site-nav__list a {
+.site-nav__link {
   display: inline-block;
   padding: var(--space-sm) var(--space-md);
   color: var(--color-primary);
@@ -143,25 +143,35 @@ body{
   border-radius: var(--radius-sm);
 }
 
-.site-nav__list a:hover {
+.site-nav__link:hover {
   color: var(--color-white);
   background-color: var(--color-primary);
 }
 
-.top__space{
+.top-space{
   height: 150px;
   width: 100vw;
 }
 
-.site-logo{
+.site-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1%;
+}
+
+.site-header__logo{
   font-weight: bold;
   text-decoration: none;
   color: #222222;
   font-size: 25px;
+  text-transform: uppercase;
+  
 }
 
 
-.site-nav.list{
+.site-nav__list{
   padding: 0;
   margin: 16px 0 0;
   list-style: none;
@@ -363,7 +373,7 @@ body{
   grid-row: 1 / 2;
 }
 
-.footer{
+.site-footer{
   padding: var(--space-lg);
 }
 
@@ -382,18 +392,23 @@ body{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.form-field {
+.order-form {
   margin-bottom: var(--space-md);
 }
 
-.form-field label {
-  display: block;
-  margin-bottom: var(--space-xs);
+.order-form__field{
+  margin-bottom: var(--space-md);
 }
 
-.form-field input,
-.form-field select,
-.form-field textarea {
+.order-form__label {
+  display: block;
+  margin-bottom: var(--space-xs);
+
+}
+
+.order-form__input,
+.order-form select,
+.order-form textarea {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid var(--color-border);
@@ -401,25 +416,28 @@ body{
   font: inherit;
 }
 
-.form-field input[type="checkbox"] {
-  width: auto;
+
+.order-form:nth-last-child(1) > input{
+  width: 25px;
+  height: auto;
+  display: inline;
 }
 
-.form-field small {
+.order-form small {
   display: block;
   margin-top: var(--space-xs);
   color: var(--color-muted);
 }
 
-.form-field input:hover,
-.form-field select:hover,
-.form-field textarea:hover {
+.order-form input:hover,
+.order-form select:hover,
+.order-form textarea:hover {
   border-color: var(--color-primary);
 }
 
-.form-field input:focus-visible,
-.form-field select:focus-visible,
-.form-field textarea:focus-visible,
+.order-form input:focus-visible,
+.order-form select:focus-visible,
+.order-form textarea:focus-visible,
 .form-actions button:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
@@ -432,10 +450,17 @@ body{
 /*
   Кнопки формы.
 */
-.form-actions {
+.order-form__actions{
   display: flex;
   gap: 12px;
   margin-top: 20px;
+}
+
+.order-form__button{
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+
 }
 
 /*
